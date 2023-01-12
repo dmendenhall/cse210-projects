@@ -32,5 +32,17 @@ class Program
 
         float average = ((float)sum) / numberList.Count;
         Console.WriteLine($"The average is {average}.");
+
+        int max = numberList[0];
+
+        foreach (int input in numberList)
+        {
+            if (input > max)
+            {
+                max = input;
+            }
+        }
+
+        Console.WriteLine($"The largest number is {max}.");
     }
 }
